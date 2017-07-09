@@ -9,23 +9,31 @@ class Ideone
 {
 	public static void main (String[] args) throws java.lang.Exception
 	{
-			int n;
-		Scanner s=new Scanner(System.in);
-		n=s.nextInt();
-		System.out.println("Enter year:"+n);
-		if(n>1000)
-		{if(n%4==0 && n%100!=0 || n%400==0 && n%100!=0)
-		{
-			System.out.println("Leap year");	// your code goes here
-		}
-		else
-		{
-			System.out.println("Non-leap year");	// your code goes here
-		}
-		}
-		else
-		{
-			System.out.println("Error");	
-		}
+				int year;
+	Scanner s=new Scanner(System.in);
+		year=s.nextInt();
+		System.out.println("Enter year:"+year);
+        boolean leap = false;
+ 
+        if(year % 4 == 0)
+        {
+            if( year % 100 == 0)
+            {
+                // year is divisible by 400, hence the year is a leap year
+                if ( year % 400 == 0)
+                    leap = true;
+                else
+                    leap = false;
+            }
+            else
+                leap = true;
+        }
+        else
+            leap = false;
+ 
+        if(leap)
+            System.out.println(year + " is a leap year.");
+        else
+            System.out.println(year + " is not a leap year.");
 	}
 }
