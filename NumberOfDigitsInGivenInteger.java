@@ -26,7 +26,7 @@ class Ideone
 			number=number/10;
 			count++;
 		}
-			System.out.println("Number of Digits in given number is: "+count);
+			System.out.println("Number of Digits in given integer is: "+count);
 		// your code goes here
 	}
 }
