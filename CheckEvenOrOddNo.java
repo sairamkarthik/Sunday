@@ -11,7 +11,7 @@ class Ideone
 	{
 		int x;
 Scanner s=new Scanner(System.in);
-System.out.println("Enter a number");
+System.out.println("Enter a number");//                    Check Even or Odd no.
 x=s.nextInt();
 if(x%2==0)
 {
