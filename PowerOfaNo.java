@@ -13,7 +13,7 @@ class Ideone
 		Scanner s=new Scanner(System.in);
 		b=s.nextInt();
 		System.out.println("Enter base:"+b);
-		p=s.nextInt();
+		p=s.nextInt();//			PowerOfaNo
 		System.out.println("Enter power:"+p);
 		int x=1;
 		while(p!=0)
