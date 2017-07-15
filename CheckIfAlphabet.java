@@ -17,7 +17,7 @@ if('a'<=ch && ch<='z' || 'A'<=ch && ch<='Z')
 	{
 		System.out.println("Alphabet");
 		}
-		else
+		else							//  CheckIfAlphabet
 	{
 		System.out.println("Not an alphabet");
 }// your code goes here
