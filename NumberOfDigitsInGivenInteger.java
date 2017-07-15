@@ -16,7 +16,7 @@ class Ideone
  		if(number<0)
 		{
 			number=number * -1;
-		}
+		} 						//Number Of Digits In Given Integer
 		else if(number==0)
 		{
 			number=1;
